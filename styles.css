@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0e990;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #34c5d8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kitten-img {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.kitten-button {
+    background-image: url('imagen/kitten-botton-hover.png'); /* Ruta a tu imagen */
+    background-size: cover;
+    background-repeat: repeat-x;
+    border: none;
+    width: 5cm; /* Ancho de la flor */
+    height: 5cm; /* Alto de la flor */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.kitten-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px transparent; /* Cambia el color de fondo para que coincida con el fondo de la página */
+    transform: translateX(-50%);
+}

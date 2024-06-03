@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Gatitos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>¡Bienvenido al Formulario de Gatitos!</h1>
+    <img src="imagen/cat1.jpeg" alt="Gatito" class="kitten-img">
+    <form action="/procesar_formulario" method="POST">
+
+        <label for="nombre">Nombre del gatito:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="raza">Raza:</label><br>
+        <select id="raza" name="raza">
+            <option value="siames">Siames</option>
+            <option value="persa">Persa</option>
+            <option value="maine_coone">Maine Coone</option>
+            <option value="bengala">Bengalá</option>
+        </select><br><br>
+
+        <label for="imagen">Sube una foto de tu gatito:</label><br>
+        <input type="file" id="imagen" name="imagen"><br><br>
+
+        <label for="nombre">color de ojos del Gato:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="edad">Edad del Gato:</label><br>
+        <input type="number" id="edad" name="edad" min="0" max="25" required><br><br>
+
+        <label for="color">Color del Gato:</label><br>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <label for="temperamento">Temperamento:</label><br>
+        <select id="temperamento" name="temperamento" required>
+            <option value="tranquilo">Tranquilo</option>
+            <option value="jugueton">Juguetón</option>
+            <option value="reservado">Reservado</option>
+            <option value="agresivo">Agresivo</option>
+        </select><br><br>
+
+        <label for="caracteristicas">Características adicionales:</label><br>
+        
+        <button type="submit" class="cat-button">Enviar</button>
+        <!--button type="submit" class="cat-button">Enviar</button-->
+    </form>
+</div>
+
+</body>
+</html>
